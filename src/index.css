@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  padding: 3rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  background-color: #eeeeee;
+  position: relative;
+  min-width: 500px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 15px;
+}
+
+.header .burger {
+  display: block;
+  cursor: pointer;
+  margin-top: -5px ;
+}
+
+.burger div {
+  height: 3px;
+  width: 25px;
+  background-color: #000;
+  margin: 5px 0;
+}
+
+.btn {
+  padding: .2rem .8rem;
+  color: #fff;
+  background-color: rgb(66, 69, 255);
+  border-radius: 30%;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  position: absolute;
+  right: 10%;
+  bottom: 5%;
+}
+
+.tasks {
+  margin-top: 2rem;
+}
+
+.tasks p {
+  font-size: 25px;
+}
+
+.tasks .span {
+  font-weight: bolder;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin: 1rem 0;
+  background-color: rgb(255, 254, 254);
+  box-shadow: 0px 1px 1px -1px rgb(0, 0, 0);
+  padding: 1.2rem 2rem
+}
+
+.task h4 {
+  font-size: 15px;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  width: 75%;
+  padding: .5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: .2rem 0;
+}
+
+.submit {
+  margin: 1rem 0;
+  display: inline-block;
+  width: 75%;
+  padding: .5rem 1rem;
+  color: #fff;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
