@@ -15,7 +15,6 @@ function App() {
   const taskComplete = (id) => {
     setTasks(tasks.map((task) => 
     id === task.id ? { ...task, done: !task.done } : task));
-    console.log('hyyyy')
   }
 
   const [tasks, setTasks] = useState([

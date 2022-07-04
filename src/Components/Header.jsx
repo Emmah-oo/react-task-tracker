@@ -8,7 +8,6 @@ const Header = ({ toggle, isOpen }) => {
         <div className="line3"></div>
       </div>
       <h1>Task Tracker</h1>
-      <h3>Alert Icon</h3>
     </div>
   );
 };
