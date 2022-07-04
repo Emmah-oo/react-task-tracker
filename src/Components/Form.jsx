@@ -13,9 +13,15 @@ const Form = ({ tasks, setTasks }) => {
 
   const updateTask = (e) => {
     e.preventDefault();
-    setTasks((tasks) => [...tasks, { name, date }]);
-    setName('')
-    setDate('')
+    if (name.length > 0 && date.length > 0) {
+      const id = Math.floor(Math.random()*100)
+      const done = false
+      setTasks((tasks) => [...tasks, { name, date, id, done }]);
+      setName('')
+      setDate('')
+    } else {
+      alert('Enter A Task')
+    }
   };
 
   return (
@@ -31,7 +37,7 @@ const Form = ({ tasks, setTasks }) => {
 
         <input
           className="input"
-          type="text"
+          type="date"
           placeholder="Task Date"
           value={date}
           onChange={getDate}

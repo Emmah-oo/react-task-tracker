@@ -1,5 +1,5 @@
 {
-  "name": "routers",
+  "name": "task-tracker",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,7 +10,8 @@
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "homepage" : "https://{Emmah-oo}.github.io/{task-tracker}"
   },
   "scripts": {
     "start": "react-scripts start",
