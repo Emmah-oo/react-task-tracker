@@ -3,9 +3,8 @@ import Task from "./Task";
 const Tasks = ({ tasks, deleteTask, taskComplete }) => {
   return (
     <div className="tasks">
-      <p>
-        Remaining Task (<span className="span">{tasks.length}</span>)
-      </p>
+        {tasks.length > 0 ? <p>Remaining Task (<span className="span">{tasks.length}</span>)</p>
+        : <p>No Task Added</p>}
       {tasks.map((task) => (
         <Task 
         key={task.id} 

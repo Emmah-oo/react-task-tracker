@@ -3,7 +3,6 @@ import Header from './Components/Header'
 import Tasks from './Components/Tasks';
 import Form from './Components/Form';
 import Button from './Components/Button';
-import Close from './Components/Button';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,8 +47,7 @@ function App() {
         <Header toggle= {toggle} isOpen={isOpen} />
         {isOpen ? <Form isOpen={isOpen} tasks={tasks} setTasks={setTasks} /> : ''}
         <Tasks tasks={tasks} deleteTask={deleteTask} taskComplete={taskComplete} />
-        {isOpen ? <Close toggle={toggle} isOpen ={isOpen} /> 
-        : <Button toggle={toggle} isOpen ={isOpen} />}
+        <Button toggle={toggle} isOpen ={isOpen} />
       </div>
   );
 }
